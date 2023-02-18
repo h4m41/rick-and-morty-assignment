@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "cabold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Cabold\ Comic\ demo.otf");
+}
+@font-face {
+  font-family: "strawberry";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Strawberry\ Muffins\ Demo.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: strawberry;
+}
+body {
+  /* background-color: rgb(54, 54, 54); */
+  color: white;
+  background-image: url(images/sky.jpeg);
+  margin-bottom: 200px;
+}
+
+header {
+  margin: auto;
+
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  max-width: 350px;
+}
+.status-border {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+.status {
+  font-family: cabold;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+#searchbar {
+  padding: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  opacity: 0.8;
+}
+#searchbar:focus {
+  outline: 2px solid rgba(178, 223, 41, 1);
+  opacity: 1;
+}
+.card {
+  color: #023236;
+  width: 300px;
+  height: 400px;
+  background-color: #7dddeb;
+  margin: 30px;
+  padding: 19px;
+  padding-top: 40px;
+  border-radius: 20px;
+  outline: 4px solid rgba(178, 223, 41, 0.7);
+
+  border: 2px solid #023236;
+
+  box-shadow: 0px 6px 20px rgba(168, 243, 149, 0.5);
+}
+.card h1 {
+  border-bottom: 2px solid #11a4b1;
+  padding-bottom: 5px;
+}
+.card p {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #13bfce;
+  padding-bottom: 5px;
+}
+.card p span {
+  color: #086169;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
